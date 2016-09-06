@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="2.5" method="upgrade">
+	<name>Radiowave Generic Player (by JoomlaWorks)</name>
+	<author>JoomlaWorks</author>
+	<authorEmail>please-use-the-contact-form@joomlaworks.net</authorEmail>
+	<authorUrl>www.joomlaworks.net</authorUrl>
+	<copyright>Copyright (c) 2006 - 2016 JoomlaWorks Ltd. All rights reserved.</copyright>
+	<creationDate>September 9th, 2016</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.0</version>
+	<description>MOD_JW_RADIOWAVE_XML_DESC</description>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_jw_radiowave_player/includes/elements">
+				<field name="moduleclass_sfx" type="text" default="" label="MOD_JW_RADIOWAVE_MODULE_CLASS_SUFFIX" description="MOD_JW_RADIOWAVE_MODULE_CLASS_SUFFIX_DESC" />
+				<field name="stream_id" type="text" default="" label="MOD_JW_RADIOWAVE_STREAM_ID" description="MOD_JW_RADIOWAVE_STREAM_ID_DESC" />
+				<field name="template" type="template" default="default" label="MOD_JW_RADIOWAVE_CHOOSE_LAYOUT_TEMPLATE" description="MOD_JW_RADIOWAVE_CHOOSE_LAYOUT_TEMPLATE_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="1" label="MOD_JW_RADIOWAVE_CACHING" description="MOD_JW_RADIOWAVE_CACHING_DESC">
+					<option value="1">MOD_JW_RADIOWAVE_USE_GLOBAL</option>
+					<option value="0">MOD_JW_RADIOWAVE_NO_CACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="MOD_JW_RADIOWAVE_CACHE_TIME" description="MOD_JW_RADIOWAVE_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename module="mod_jw_radiowave_player">mod_jw_radiowave_player.php</filename>
+		<folder>includes</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jw_radiowave_player.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jw_radiowave_player.sys.ini</language>
+	</languages>
+</extension>
