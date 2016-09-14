@@ -24,6 +24,6 @@ Download the module and install it like any other Joomla! extension.
 The module relies on the Radiowave template for styling, which makes it truly 'plug and play' for your Radiowave powered website. If you want more control, you can simply override both the generated HTML and CSS, using MVC template overrides within your Joomla template. Hover over each parameter in the module settings for additional info.
 
 ### REQUIREMENTS
-- Joomla 2.5 or 3.x
+- Joomla 3.x
 - The Radiowave Template
 
