@@ -1,9 +1,9 @@
 <?php
 /**
- * @version     2.0
- * @package     TinyLetter Subscribe (module)
+ * @version     1.0
+ * @package     Radiowave Generic Player (module)
  * @author      JoomlaWorks - http://www.joomlaworks.net
- * @copyright   Copyright (c) 2006 - 2013 JoomlaWorks Ltd. All rights reserved.
+ * @copyright   Copyright (c) 2006 - 2016 JoomlaWorks Ltd. All rights reserved.
  * @license     GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
  */
 
