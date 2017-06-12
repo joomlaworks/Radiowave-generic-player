@@ -48,6 +48,7 @@ defined('_JEXEC') or die('Restricted access');
 	$init_script .= '			preload: "none",' . "\n";
 	$init_script .= '			wmode: "window",' . "\n";
 	$init_script .= '			useStateClassSkin: true,' . "\n";
+ 	$init_script .= '			autoPlay: true,' . "\n";
 	$init_script .= '			autoBlur: false,' . "\n";
 	$init_script .= '			keyEnabled: true' . "\n";
 	$init_script .= '		});' . "\n";
