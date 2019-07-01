@@ -30,3 +30,6 @@ If you want more control, you can simply override the generated HTML and CSS usi
 
 ### Information
 The latest version 2.0 was released on July 1st, 2019.
+
+### Download
+To grab the latest release, either download from https://github.com/joomlaworks/radiowave-generic-player/archive/master.zip or use that same URL to "install from URL" within the Joomla installer.
