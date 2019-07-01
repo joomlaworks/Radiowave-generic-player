@@ -1,51 +1,41 @@
 <?php
 /**
- * @version     1.0
- * @package     Radiowave Generic Player (module)
- * @author      JoomlaWorks - http://www.joomlaworks.net
- * @copyright   Copyright (c) 2006 - 2016 JoomlaWorks Ltd. All rights reserved.
- * @license     GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ * @version    2.0
+ * @package    Radiowave Generic Player (module)
+ * @author     JoomlaWorks - http://www.joomlaworks.net
+ * @copyright  Copyright (c) 2006 - 2019 JoomlaWorks Ltd. All rights reserved.
+ * @license    GNU/GPL license: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
 // no direct access
-defined('_JEXEC') or die ;
+defined('_JEXEC') or die;
 
-if (version_compare(JVERSION, '1.6.0', 'ge'))
-{
-	jimport('joomla.form.formfield');
-	class JWElement extends JFormField
-	{
-		function getInput()
-		{
-			return $this->fetchElement($this->name, $this->value, $this->element, $this->options['control']);
-		}
+if (version_compare(JVERSION, '1.6.0', 'ge')) {
+    jimport('joomla.form.formfield');
+    class JWElement extends JFormField
+    {
+        public function getInput()
+        {
+            return $this->fetchElement($this->name, $this->value, $this->element, $this->options['control']);
+        }
 
-		function getLabel()
-		{
-			if (method_exists($this, 'fetchTooltip'))
-			{
-				return $this->fetchTooltip($this->element['label'], $this->description, $this->element, $this->options['control'], $this->element['name'] = '');
-			}
-			else
-			{
-				return parent::getLabel();
-			}
+        public function getLabel()
+        {
+            if (method_exists($this, 'fetchTooltip')) {
+                return $this->fetchTooltip($this->element['label'], $this->description, $this->element, $this->options['control'], $this->element['name'] = '');
+            } else {
+                return parent::getLabel();
+            }
+        }
 
-		}
-
-		function render()
-		{
-			return $this->getInput();
-		}
-
-	}
-
-}
-else
-{
-	jimport('joomla.html.parameter.element');
-	class JWElement extends JElement
-	{
-	}
-
+        public function render()
+        {
+            return $this->getInput();
+        }
+    }
+} else {
+    jimport('joomla.html.parameter.element');
+    class JWElement extends JElement
+    {
+    }
 }
