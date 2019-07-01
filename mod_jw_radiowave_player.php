@@ -46,7 +46,7 @@ $document->addScriptDeclaration('
             $("#jquery_jplayer_'.$module->id.'").jPlayer({
                 ready: function(event) {
                     ready = true;
-                    $(this).jPlayer("setMedia", stream);
+                    $(this).jPlayer("setMedia", stream); /* To autoplay on load, use: $(this).jPlayer("setMedia", stream).jPlayer("play"); */
                 },
                 pause: function() {
                     $(this).jPlayer("clearMedia");
