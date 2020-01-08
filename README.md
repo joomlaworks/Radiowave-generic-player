@@ -29,7 +29,7 @@ If you want more control, you can simply override the generated HTML and CSS usi
 - The RadioWave Template by JoomlaWorks
 
 ### Information
-The latest version 2.0 was released on July 1st, 2019.
+The latest version 2.1 was released on January 8th, 2020.
 
 ### Download
 To grab the latest release, either download from https://github.com/joomlaworks/radiowave-generic-player/archive/master.zip or use that same URL to "install from URL" within the Joomla installer.

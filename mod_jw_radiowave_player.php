@@ -1,22 +1,14 @@
 <?php
 /**
- * @version    2.0
+ * @version    2.1
  * @package    Radiowave Generic Player (module)
  * @author     JoomlaWorks - http://www.joomlaworks.net
- * @copyright  Copyright (c) 2006 - 2019 JoomlaWorks Ltd. All rights reserved.
+ * @copyright  Copyright (c) 2006 - 2020 JoomlaWorks Ltd. All rights reserved.
  * @license    GNU/GPL license: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
 // no direct access
 defined('_JEXEC') or die;
-
-// JoomlaWorks reference parameters
-$mod_name   = "mod_jw_radiowave_player";
-
-// Conventions
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
 
 // API
 $app      = JFactory::getApplication();
@@ -29,7 +21,11 @@ $siteUrl  = substr(JURI::base(), 0, -1);
 // Module parameters
 $moduleclass_sfx = $params->get('moduleclass_sfx', '');
 $stream          = $params->get('stream_id', 'https://listen.radionomy.com/abc-jazz');
+$autoplay        = $params->get('autoplay', 0);
+$autoplay        = ($autoplay) ? '.jPlayer("play")' : '';
 $template        = $params->get('template', 'Default');
+
+$mod_name        = "mod_jw_radiowave_player";
 
 // JS
 JHtml::_('jquery.framework');
@@ -46,7 +42,7 @@ $document->addScriptDeclaration('
             $("#jquery_jplayer_'.$module->id.'").jPlayer({
                 ready: function(event) {
                     ready = true;
-                    $(this).jPlayer("setMedia", stream); /* To autoplay on load, use: $(this).jPlayer("setMedia", stream).jPlayer("play"); */
+                    $(this).jPlayer("setMedia", stream)'.$autoplay.';
                 },
                 pause: function() {
                     $(this).jPlayer("clearMedia");

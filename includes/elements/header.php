@@ -1,9 +1,9 @@
 <?php
 /**
- * @version    2.0
+ * @version    2.1
  * @package    Radiowave Generic Player (module)
  * @author     JoomlaWorks - http://www.joomlaworks.net
- * @copyright  Copyright (c) 2006 - 2019 JoomlaWorks Ltd. All rights reserved.
+ * @copyright  Copyright (c) 2006 - 2020 JoomlaWorks Ltd. All rights reserved.
  * @license    GNU/GPL license: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
