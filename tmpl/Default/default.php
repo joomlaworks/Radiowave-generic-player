@@ -12,9 +12,9 @@ defined('_JEXEC') or die;
 
 ?>
 
-<div class="playingNow small-16 large-13 left">
+<div class="playingNow jquery_jplayer_wrapper">
     <div id="jquery_jplayer_<?php echo $module->id; ?>" class="jp-jplayer"></div>
-    <div id="jp_container_1" class="jp-audio-stream<?php if($moduleclass_sfx) echo ' '.$moduleclass_sfx; ?>" role="application" aria-label="media player">
+    <div id="jp_container_1" class="jp-audio-stream" role="application" aria-label="media player">
         <div class="jp-type-single">
             <div class="jp-gui jp-interface">
                 <ul class="jp-controls">
